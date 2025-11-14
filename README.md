@@ -88,3 +88,4 @@ Displays tasks with title and completed status
 Skills demonstrated: Services with HttpClient Observables and .subscribe() Rendering list with *ngFor
 
 API usage: https://jsonplaceholder.typicode.com/todos
+
