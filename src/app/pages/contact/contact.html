@@ -1,0 +1,25 @@
+<h2>Contact Us</h2>
+<!--submitContact() triggered when the form is submitted 
+but it can be deleted it's for debugging -->
+<form (ngSubmit)="submitContact()">
+  <div>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="name" name="name" required>
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="email" name="email" required
+      #emailInput="ngModel">
+  
+  </div>
+  <div>
+    <label>Message:</label>
+<textarea [(ngModel)]="message" name="message" rows="3" required></textarea>
+  </div>
+   <button id="btn2" type="button" (click)="clearForm()">Clear</button>
+<br>
+  <button type="submit">Send</button>
+  
+ 
+</form>
+

@@ -1,0 +1,91 @@
+h2 {
+  font-weight: 300; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #fff; 
+   text-align: center;
+
+
+}
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #b7d5f6, #8ec5fc); /* Purple-blue gradient */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4b0082; /* Deep purple */
+}
+
+input[type="text"],
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b19cd9; /* Soft purple border */
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #faf5ff; /* Very light purple background */
+}
+
+input:focus {
+  border-color: #8a2be2; /* Bright purple on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+button[type="submit"] {
+  width: 40%;
+  margin: 10px;
+  padding: 12px;
+  background: linear-gradient(135deg, #7bc7d6, #6a0dad); /* Bold purple gradient */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg,  #7bc7d6, #7b1fa2); /* Lighter purple on hover */
+  transform: scale(1.03);
+}
+#btn2{
+ width: 40%;
+  padding: 12px;
+  background: linear-gradient(135deg, #7bc7d6, #6a0dad); /* Bold purple gradient */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+
+}
+
+button[disabled] {
+  background-color: #d1c4e9;
+  cursor: not-allowed;
+}
+
+div[style*="color: red"] {
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  color: #ff4d4d; /* Bright red for errors */
+  font-weight: 500;
+}
+
+

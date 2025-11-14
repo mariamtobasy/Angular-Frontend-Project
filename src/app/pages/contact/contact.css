@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+    margin: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing:border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#btn2{
+    background-color:#4caf50;
+    width: 50px;
+
+}
+button:hover {
+  background-color: #45a049;
+}

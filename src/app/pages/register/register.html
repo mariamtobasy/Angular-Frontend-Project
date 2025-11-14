@@ -1,0 +1,87 @@
+<br><br>
+<h2>{{welcomeMessage}}</h2>
+<br>
+<br>
+
+<form #regForm="ngForm" (ngSubmit)="onRegister(regForm)" >
+
+  <!-- Username -->
+  <div style="margin-bottom: 15px;">
+    <label for="username">Username:</label>
+    <input 
+      type="text"
+      id="username"
+      name="username"
+      [(ngModel)]="username"
+      placeholder="Enter your name"
+      required
+      minlength="3"
+      #usernameInput="ngModel"/>
+    
+    <div *ngIf="usernameInput.touched && usernameInput.invalid" style="color: rgb(222, 39, 39); font-weight: 540;">
+      <div *ngIf="usernameInput.errors?.['required']">Username is required.</div>
+      <div *ngIf="usernameInput.errors?.['minlength']">Must be at least 3 characters.</div>
+    </div>
+  </div>
+
+  <!-- Password -->
+  <div style="margin-bottom: 15px;">
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="password"
+      placeholder="Enter a strong password"
+      required
+      minlength="6"
+      #passwordInput="ngModel"
+      
+    >
+    <!--<div *ngIf="passwordInput.touched && passwordInput.invalid" style="color: rgb(222, 39, 39); font-weight: 540;">
+      <div *ngIf="passwordInput.errors?.['required']">Password is required.</div>
+      <div *ngIf="passwordInput.errors?.['minlength']">Must be at least 6 characters.</div>
+    </div>>>
+  </div>-->
+
+   <div *ngIf="passwordInput.touched && passValidation(password)" style="color: rgb(222, 39, 39); font-weight: 540;">
+      {{ passValidation(password) }}
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div style="margin-bottom: 15px;">
+    <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;:&nbsp;</label>
+    <input 
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="email"
+      placeholder="Enter your email address"
+      required
+      email
+      #emailInput="ngModel">
+   <div *ngIf="emailInput.touched && passValidationEmail(email)" style="color: rgb(222, 39, 39); font-weight: 540;">
+      {{ passValidationEmail(email)}}
+    </div>
+    
+  </div>
+
+  <!-- Submit Button (Disabled if form invalid) -->
+  <div style="text-align: center; margin: 20px;">
+    
+    <button type="submit" [disabled]="regForm.invalid" style="padding: 10px 20px;">
+       Submit 
+      </button>
+<br>
+<br>
+   <button id="btn2" type="button" (click)="clearForm()">Clear</button>
+     
+   
+  </div>
+
+</form>
+
+<hr>
+
+

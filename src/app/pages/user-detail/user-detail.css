@@ -1,0 +1,38 @@
+/* Targets the first div inside this component */
+:host > div {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Heading style */
+:host > div h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Paragraphs style */
+:host > div p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #282626;
+}
+
+/* Make the strong label stand out */
+:host > div p strong {
+  color: #222;
+  width: 80px;
+  display: inline-block;
+}
+
+/* Loading template style */
+:host > ng-template + p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.1rem;
+  color: #777;
+}

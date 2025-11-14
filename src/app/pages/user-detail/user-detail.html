@@ -1,0 +1,15 @@
+<div *ngIf="user; else loading" >
+<!--*ngIf="user; else loading" – if user exists, show details; otherwise, show the loading template.
+*ngIf is a structural directive that conditionally includes or removes elements from the DOM.-->
+    <h2>{{ user.name }} ({{ user.username }})</h2>
+  
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Phone:</strong> {{ user.phone }}</p>
+  <p><strong>Website:</strong> {{ user.website }}</p>
+
+</div>
+
+<ng-template #loading>
+<!--this is the loading template -->
+  <p>Loading user...</p>
+</ng-template>
