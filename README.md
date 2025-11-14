@@ -26,6 +26,8 @@ Skills demonstrated: FormGroup and FormBuilder Reactive form validation Service 
 
 2️⃣ Register Page
 
+<img src="register.png" width="500">
+
 Template-driven form (NgForm)
 
 Form fields: username, email, password
@@ -43,6 +45,8 @@ Skills demonstrated: TypeScript interfaces Dependency injection Observables Http
 API usage: https://jsonplaceholder.typicode.com/users
 
 4️⃣ Users Page (About)
+
+<img src="users.png" width="500">
 
 Fetches list of users from API (getUsers() from Master service)
 
@@ -72,6 +76,8 @@ API usage: https://jsonplaceholder.typicode.com/users
 
 6️⃣ Contact Us Page
 
+<img src="contactus.png" width="500">
+
 Form fields: name, email, message
 
 Buttons: Submit + Clear
@@ -84,6 +90,8 @@ Skills demonstrated: Template-driven forms Two-way binding Event handling
 
 7️⃣ Task Manager Page
 
+<img src="TaskManager.png" width="500">
+
 Fetches tasks from JSONPlaceholder API
 
 Displays tasks with title and completed status
@@ -91,5 +99,6 @@ Displays tasks with title and completed status
 Skills demonstrated: Services with HttpClient Observables and .subscribe() Rendering list with *ngFor
 
 API usage: https://jsonplaceholder.typicode.com/todos
+
 
 
