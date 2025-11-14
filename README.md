@@ -13,6 +13,9 @@ HTML & CSS Structural directives: *ngIf, *ngFor Event binding (click) & two-way 
 
 🚀 Features 1️⃣ Login Page
 
+<img src="login.png" width="500">
+
+
 Built using Reactive Forms
 
 Form fields: username, password
@@ -88,4 +91,5 @@ Displays tasks with title and completed status
 Skills demonstrated: Services with HttpClient Observables and .subscribe() Rendering list with *ngFor
 
 API usage: https://jsonplaceholder.typicode.com/todos
+
 
