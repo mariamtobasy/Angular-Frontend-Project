@@ -1,59 +1,90 @@
-# MyFirstApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+Angular Internship Project
 
-## Development server
+Project Overview: This is an Angular application built during my Full-Stack internship. The project demonstrates practical Angular skills including forms, routing, API consumption, services, and component-based architecture. The app simulates a user management system with login, registration, users list, user details, contact, and a task manager.
 
-To start a local development server, run:
+🛠️ Technologies & Skills Used:
 
-```bash
-ng serve
-```
+Angular (16+) TypeScript Standalone Components Angular Router & Routing Reactive Forms (FormGroup, FormBuilder) Template-driven forms (NgForm, ngModel) Validators & Custom Validation Services & Dependency Injection Observables (HttpClient + .subscribe())
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+API integration: https://jsonplaceholder.typicode.com/users https://jsonplaceholder.typicode.com/todos
 
-## Code scaffolding
+HTML & CSS Structural directives: *ngIf, *ngFor Event binding (click) & two-way binding [(ngModel)]
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🚀 Features 1️⃣ Login Page
 
-```bash
-ng generate component component-name
-```
+Built using Reactive Forms
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Form fields: username, password
 
-```bash
-ng generate --help
-```
+Form validation: Required fields Minimum password length Login logic handled by Master service Alerts on successful or failed login
 
-## Building
+Skills demonstrated: FormGroup and FormBuilder Reactive form validation Service injection Template binding and event handling
 
-To build the project run:
+2️⃣ Register Page
 
-```bash
-ng build
-```
+Template-driven form (NgForm)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Form fields: username, email, password
 
-## Running unit tests
+Validation includes: Required fields Minimum length Custom password rules (1 uppercase, 1 symbol, at least 3 numbers) Custom email format validation Registration logic handled by Master service Alerts on successful registration Clear form functionality Skills demonstrated: Template-driven forms Two-way binding [(ngModel)] Custom validation methods in TypeScript Dependency injection
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3️⃣ Master Service
 
-```bash
-ng test
-```
+Handles core logic for user management
 
-## Running end-to-end tests
+Methods: registerUser(user: User) → stores a user in a private array loginUser(username, password) → checks credentials getUsers() → fetches users from JSONPlaceholder API
 
-For end-to-end (e2e) testing, run:
+Skills demonstrated: TypeScript interfaces Dependency injection Observables HttpClient usage Local in-memory data handling
 
-```bash
-ng e2e
-```
+API usage: https://jsonplaceholder.typicode.com/users
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+4️⃣ Users Page (About)
 
-## Additional Resources
+Fetches list of users from API (getUsers() from Master service)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Displays user cards with name and email
+
+Each user links to /users/:id page
+
+Skills demonstrated: *ngFor directive Async data handling via Observables RouterLink for dynamic navigation
+
+API usage: https://jsonplaceholder.typicode.com/users
+
+5️⃣ User Details Page
+
+Dynamic route /users/:id
+
+Reads ID from URL using ActivatedRoute
+
+Fetches full list of users from API and finds user by ID
+
+Displays user info: name, username, email, phone, website
+
+Shows loading template while waiting for API response
+
+Skills demonstrated: Dynamic routing with parameters ActivatedRoute usage Conditional template rendering (*ngIf + ng-template) Observable subscription
+
+API usage: https://jsonplaceholder.typicode.com/users
+
+6️⃣ Contact Us Page
+
+Form fields: name, email, message
+
+Buttons: Submit + Clear
+
+submitContact() logs values to console and displays alert
+
+Clears the form after submission
+
+Skills demonstrated: Template-driven forms Two-way binding Event handling
+
+7️⃣ Task Manager Page
+
+Fetches tasks from JSONPlaceholder API
+
+Displays tasks with title and completed status
+
+Skills demonstrated: Services with HttpClient Observables and .subscribe() Rendering list with *ngFor
+
+API usage: https://jsonplaceholder.typicode.com/todos
