@@ -44,7 +44,7 @@ Skills demonstrated: TypeScript interfaces Dependency injection Observables Http
 
 API usage: https://jsonplaceholder.typicode.com/users
 
-4️⃣ Users Page (About)
+4️⃣ Users Page 
 
 <img src="users.png" width="500">
 
@@ -99,6 +99,7 @@ Displays tasks with title and completed status
 Skills demonstrated: Services with HttpClient Observables and .subscribe() Rendering list with *ngFor
 
 API usage: https://jsonplaceholder.typicode.com/todos
+
 
 
 
